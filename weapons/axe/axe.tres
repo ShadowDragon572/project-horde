@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3 uid="uid://dnwqq2w738pvn"]
+
+[ext_resource type="AudioStream" uid="uid://bvdxmdkcqqnl1" path="res://assets/audio/axe_swing.mp3" id="1_mnguu"]
+[ext_resource type="Script" uid="uid://yhsqcd421qy0" path="res://weapons/weapon_data.gd" id="1_oq18j"]
+[ext_resource type="PackedScene" uid="uid://dy810p3gh6qdt" path="res://weapons/axe/axe_view.tscn" id="2_hje0j"]
+
+[resource]
+script = ExtResource("1_oq18j")
+display_name = "Axe"
+viewmodel = ExtResource("2_hje0j")
+kind = 1
+damage = 3
+melee_range = 4.0
+fire_sound = ExtResource("1_mnguu")
+metadata/_custom_type_script = "uid://yhsqcd421qy0"

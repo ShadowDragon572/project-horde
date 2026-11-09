@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://cy0luyxfrmx41"]
+
+[ext_resource type="PackedScene" uid="uid://0t4uddqn8qlm" path="res://scenes/enemy_ai.tscn" id="1_shm6i"]
+[ext_resource type="Texture2D" uid="uid://b0sgbergqwkl4" path="res://assets/PSX Textures/512x512/Elements/PTP-Elements_12-512x512.png" id="2_qrlly"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_shm6i"]
+radius = 0.7
+height = 2.4
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1buyy"]
+render_priority = 1
+transparency = 1
+shading_mode = 0
+grow = true
+grow_amount = 0.1
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tnyut"]
+next_pass = SubResource("StandardMaterial3D_1buyy")
+albedo_color = Color(0.552, 0.52, 1, 1)
+albedo_texture = ExtResource("2_qrlly")
+uv1_scale = Vector3(1.165, 1.165, 1.165)
+uv1_triplanar = true
+distance_fade_max_distance = 20.0
+stencil_mode = 1
+stencil_flags = 2
+stencil_color = Color(1, 1, 1, 1)
+stencil_outline_thickness = 0.1
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_30wi0"]
+material = SubResource("StandardMaterial3D_tnyut")
+
+[node name="EnemyTank" unique_id=124476408 instance=ExtResource("1_shm6i")]
+max_health = 10
+xp_value = 6
+hit_range = 1.9
+stop_distance = 1.7
+attack_damage = 20
+windup_time = 0.7
+lunge_speed = 12.0
+recover_time = 0.9
+windup_color = Color(0.9610122, 0, 0.05014059, 1)
+speed = 4.0
+
+[node name="CollisionShape3D" parent="." index="0" unique_id=2062021234]
+shape = SubResource("CapsuleShape3D_shm6i")
+
+[node name="Visual" parent="." index="1" unique_id=1366722788]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, -1.2, 0)
+
+[node name="MeshInstance3D" parent="Visual" index="0" unique_id=2003102005]
+mesh = SubResource("CapsuleMesh_30wi0")

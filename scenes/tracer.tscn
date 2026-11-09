@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ci8lfe20yjhw4"]
+
+[ext_resource type="Script" uid="uid://dg34oqr1cbvxr" path="res://tracer.gd" id="1_o68uk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o68uk"]
+shading_mode = 0
+albedo_color = Color(2.454227, 2.3420014, 1.8294876, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jjn3q"]
+material = SubResource("StandardMaterial3D_o68uk")
+size = Vector3(0.03, 0.03, 1)
+
+[node name="Tracer" type="Node3D" unique_id=1297094880]
+script = ExtResource("1_o68uk")
+
+[node name="Streak" type="MeshInstance3D" parent="." unique_id=2043543954]
+cast_shadow = 0
+mesh = SubResource("BoxMesh_jjn3q")

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3 uid="uid://xjk4frjmdg1x"]
+
+[ext_resource type="AudioStream" uid="uid://byfrujcexuxjq" path="res://assets/audio/single-pistol-gunshot.mp3" id="1_3nay8"]
+[ext_resource type="Script" uid="uid://yhsqcd421qy0" path="res://weapons/weapon_data.gd" id="1_ckfx7"]
+[ext_resource type="AudioStream" uid="uid://dg6widn5qfdbd" path="res://assets/audio/pistol_reload.mp3" id="2_fbyut"]
+[ext_resource type="PackedScene" uid="uid://g7hys45ykqtt" path="res://weapons/pistol/pistol_view.tscn" id="4_73cem"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_tsb7k"]
+random_pitch = 1.0656005
+random_volume_offset_db = 2.0
+streams_count = 1
+stream_0/stream = ExtResource("1_3nay8")
+
+[resource]
+script = ExtResource("1_ckfx7")
+display_name = "Pistol"
+viewmodel = ExtResource("4_73cem")
+fire_sound = SubResource("AudioStreamRandomizer_tsb7k")
+reload_sound = ExtResource("2_fbyut")
+metadata/_custom_type_script = "uid://yhsqcd421qy0"

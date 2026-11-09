@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://bs72ogkvdd7d6"]
+
+[ext_resource type="Script" uid="uid://cbigseq1wtbl6" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="AudioStream" uid="uid://cq0n55r4xdqo0" path="res://assets/audio/PickUp.mp3" id="2_ue3g7"]
+[ext_resource type="Script" uid="uid://ccywghujjt584" path="res://scripts/hand.gd" id="3_h60nn"]
+[ext_resource type="Script" uid="uid://us70p5km5brg" path="res://scripts/camera_shake.gd" id="4_ue3g7"]
+[ext_resource type="Script" uid="uid://dakeuvjf6gm3v" path="res://scripts/stance_manager.gd" id="4_ujot4"]
+[ext_resource type="Script" uid="uid://7kqtc7vnyhgi" path="res://weapons/stance.gd" id="5_ths8c"]
+[ext_resource type="Resource" uid="uid://d10ttrhahs6o7" path="res://weapons/stance_1.tres" id="6_x436g"]
+[ext_resource type="Resource" uid="uid://b7l0f7d22nn30" path="res://weapons/stance_2.tres" id="7_q1ipm"]
+[ext_resource type="Resource" uid="uid://cleh6xonaftti" path="res://weapons/stance_3.tres" id="8_x436g"]
+[ext_resource type="Resource" uid="uid://c575e8q4y0ute" path="res://weapons/stance_4.tres" id="9_q1ipm"]
+[ext_resource type="AudioStream" uid="uid://b51feee50wq2e" path="res://assets/audio/Hit1.mp3" id="10_q1ipm"]
+[ext_resource type="AudioStream" uid="uid://bj2sd1gyt8q73" path="res://assets/audio/Hit2.mp3" id="11_ue3g7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
+albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ucva2"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_iof21"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_5ro2l"]
+radius = 0.045
+height = 0.45
+
+[sub_resource type="BoxMesh" id="BoxMesh_5ro2l"]
+size = Vector3(0.08, 0.07, 0.1)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_xn734"]
+random_pitch = 1.0656005
+random_volume_offset_db = 2.0
+streams_count = 2
+stream_0/stream = ExtResource("10_q1ipm")
+stream_1/stream = ExtResource("11_ue3g7")
+
+[node name="ProtoController" type="CharacterBody3D" unique_id=515350423 groups=["player"]]
+script = ExtResource("1_ucva2")
+pickup_sound = ExtResource("2_ue3g7")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=1620022647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+material_override = SubResource("StandardMaterial3D_iof21")
+cast_shadow = 0
+mesh = SubResource("CapsuleMesh_ucva2")
+
+[node name="Collider" type="CollisionShape3D" parent="." unique_id=1753848074]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("CapsuleShape3D_iof21")
+
+[node name="Head" type="Node3D" parent="." unique_id=938744532]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=2042557686]
+
+[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D" unique_id=989610345]
+unique_name_in_owner = true
+target_position = Vector3(0, 0, -40)
+
+[node name="RayCastEnd" type="Node3D" parent="Head/Camera3D/RayCast3D" unique_id=1191811281]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -40)
+
+[node name="ViewModel" type="Node3D" parent="Head/Camera3D" unique_id=1083651931]
+
+[node name="HandLeft" type="Node3D" parent="Head/Camera3D/ViewModel" unique_id=1662396805]
+unique_name_in_owner = true
+transform = Transform3D(1.9106855e-15, -4.371139e-08, -1, -1, -4.371139e-08, 0, -4.371139e-08, 1, -4.371139e-08, -0.397, -0.504, -0.938)
+script = ExtResource("3_h60nn")
+side = 0
+
+[node name="WeaponSocket" type="Node3D" parent="Head/Camera3D/ViewModel/HandLeft" unique_id=582954753]
+
+[node name="ArmModel" type="Node3D" parent="Head/Camera3D/ViewModel/HandLeft" unique_id=2119018798]
+transform = Transform3D(1, 1.489429e-09, 1.131334e-08, 1.489429e-09, 0.9659258, -0.25881904, -1.131334e-08, 0.25881904, 0.9659258, 0, 0.17500001, 0.046985954)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/Camera3D/ViewModel/HandLeft/ArmModel" unique_id=1944824182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05811155, 0)
+mesh = SubResource("CapsuleMesh_5ro2l")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/ViewModel/HandLeft/ArmModel" unique_id=123677123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.17853957, 0)
+mesh = SubResource("BoxMesh_5ro2l")
+
+[node name="FireSound" type="AudioStreamPlayer" parent="Head/Camera3D/ViewModel/HandLeft" unique_id=1796840961]
+volume_db = -15.0
+max_polyphony = 4
+
+[node name="ReloadSound" type="AudioStreamPlayer" parent="Head/Camera3D/ViewModel/HandLeft" unique_id=2044531858]
+volume_db = -4.0
+max_polyphony = 4
+
+[node name="HandRight" type="Node3D" parent="Head/Camera3D/ViewModel" unique_id=365886893]
+unique_name_in_owner = true
+transform = Transform3D(1.9106855e-15, -4.371139e-08, -1, -1, -4.371139e-08, 0, -4.371139e-08, 1, -4.371139e-08, 0.397, -0.504, -0.938)
+script = ExtResource("3_h60nn")
+
+[node name="WeaponSocket" type="Node3D" parent="Head/Camera3D/ViewModel/HandRight" unique_id=1609705678]
+
+[node name="ArmModel" type="Node3D" parent="Head/Camera3D/ViewModel/HandRight" unique_id=1364607890]
+transform = Transform3D(1, 0, 0, 0, 0.96592575, 0.258819, 0, -0.258819, 0.96592575, 0, 0.17500001, -0.04981914)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/Camera3D/ViewModel/HandRight/ArmModel" unique_id=1091867091]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05811155, 0)
+mesh = SubResource("CapsuleMesh_5ro2l")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/ViewModel/HandRight/ArmModel" unique_id=28336808]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.17853957, 0)
+mesh = SubResource("BoxMesh_5ro2l")
+
+[node name="FireSound" type="AudioStreamPlayer" parent="Head/Camera3D/ViewModel/HandRight" unique_id=765575260]
+volume_db = -15.0
+max_polyphony = 4
+
+[node name="ReloadSound" type="AudioStreamPlayer" parent="Head/Camera3D/ViewModel/HandRight" unique_id=1874110588]
+volume_db = -4.0
+max_polyphony = 4
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Head/Camera3D" unique_id=1097538120]
+light_energy = 1.5
+spot_range = 4.346
+spot_attenuation = -0.12
+spot_angle = 46.210667
+
+[node name="CameraShake" type="Node" parent="Head/Camera3D" unique_id=1932751590]
+script = ExtResource("4_ue3g7")
+
+[node name="StanceManager" type="Node" parent="." unique_id=255853924]
+script = ExtResource("4_ujot4")
+starting_stances = Array[ExtResource("5_ths8c")]([ExtResource("6_x436g"), ExtResource("7_q1ipm"), ExtResource("8_x436g"), ExtResource("9_q1ipm")])
+
+[node name="HitSound" type="AudioStreamPlayer" parent="." unique_id=495262943]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamRandomizer_xn734")
+max_polyphony = 4

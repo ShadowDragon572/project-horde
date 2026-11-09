@@ -1,0 +1,460 @@
+[gd_scene format=3 uid="uid://6rmipsv0dsde"]
+
+[ext_resource type="Shader" uid="uid://r8nbbpfg7e34" path="res://materials/shaders/main.gdshader" id="1_choun"]
+[ext_resource type="PackedScene" uid="uid://chi88cp2ximep" path="res://scenes/main_level.tscn" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://dbljfr8e0f8sl" path="res://assets/color_pallets/(26)ennis-blade-extended-cut-1x.png" id="2_choun"]
+[ext_resource type="Texture2D" uid="uid://d0ungybdv4tyj" path="res://assets/icons/White Crosshair.png" id="2_tipki"]
+[ext_resource type="Script" uid="uid://cuxpg2ibbcm7k" path="res://scripts/gui/hit_marker.gd" id="3_85g3d"]
+[ext_resource type="Script" uid="uid://db87ra3nimnw2" path="res://scripts/gui/hud.gd" id="4_a8y0u"]
+[ext_resource type="Script" uid="uid://cqwcw8pitw2bg" path="res://scripts/gui/wave_hud.gd" id="4_choun"]
+[ext_resource type="Script" uid="uid://dfi2nl225qujr" path="res://scripts/gui/health_hud.gd" id="6_eb6dy"]
+[ext_resource type="Script" uid="uid://c6ihg0hlg3km8" path="res://scripts/gui/xphud.gd" id="7_trceg"]
+[ext_resource type="Script" uid="uid://882xtsg2umcf" path="res://scripts/gui/upgrade_menu.gd" id="8_a8y0u"]
+[ext_resource type="AudioStream" uid="uid://bw5ivek70bqto" path="res://assets/audio/ChurchBell1.mp3" id="11_dp3eg"]
+[ext_resource type="AudioStream" uid="uid://bg8sw2qcsp7y8" path="res://assets/audio/ChurchBell2.mp3" id="12_0ld40"]
+[ext_resource type="PackedScene" uid="uid://d37gyyijlf1ax" path="res://scenes/hand_panel.tscn" id="12_eb6dy"]
+[ext_resource type="Script" uid="uid://h3lrkyfr6y0f" path="res://scripts/gui/stance_quick_swap.gd" id="14_jkv2x"]
+[ext_resource type="Script" uid="uid://cy826g1frj35h" path="res://scripts/gui/stance_editor.gd" id="15_jkv2x"]
+[ext_resource type="Script" uid="uid://d0b4aun46i87" path="res://scripts/gui/stamina_bar.gd" id="16_stamina"]
+[ext_resource type="PackedScene" path="res://scenes/wave_banner.tscn" id="17_banner"]
+[ext_resource type="PackedScene" path="res://scenes/pause_menu.tscn" id="18_pause"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tipki"]
+shader = ExtResource("1_choun")
+shader_parameter/num_colors = 26
+shader_parameter/PALETTE_TEXTURE = ExtResource("2_choun")
+shader_parameter/dithering = true
+shader_parameter/dither_strength = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_0e4v7"]
+random_pitch = 1.0656005
+random_volume_offset_db = 2.0
+streams_count = 2
+stream_0/stream = ExtResource("11_dp3eg")
+stream_1/stream = ExtResource("12_0ld40")
+
+[node name="Main" type="Node" unique_id=1119747744]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1671575014]
+material = SubResource("ShaderMaterial_tipki")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+stretch_shrink = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=731077128]
+handle_input_locally = false
+audio_listener_enable_3d = true
+size = Vector2i(960, 540)
+render_target_update_mode = 4
+
+[node name="MainControl" parent="SubViewportContainer/SubViewport" unique_id=921928881 instance=ExtResource("1_o5qli")]
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=142171027]
+script = ExtResource("4_a8y0u")
+
+[node name="Crosshair" type="TextureRect" parent="HUD" unique_id=679951081]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+pivot_offset = Vector2(100, 100)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 2
+texture = ExtResource("2_tipki")
+expand_mode = 1
+
+[node name="HitMarker" type="Control" parent="HUD" unique_id=821870945 groups=["hit_marker"]]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("3_85g3d")
+
+[node name="WaveHUD" type="Control" parent="HUD" unique_id=251456362]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("4_choun")
+
+[node name="WavePanel" type="PanelContainer" parent="HUD/WaveHUD" unique_id=297878950]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_top = 24.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD/WaveHUD/WavePanel" unique_id=1622687340]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 14
+
+[node name="WaveLabel" type="Label" parent="HUD/WaveHUD/WavePanel/HBoxContainer" unique_id=635239360]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Wave 1"
+
+[node name="EnemiesLabel" type="Label" parent="HUD/WaveHUD/WavePanel/HBoxContainer" unique_id=677098553]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"KeyHintLabel"
+text = "·   4 enemies left"
+
+[node name="HealthHUD" type="Control" parent="HUD" unique_id=1252409356]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("6_eb6dy")
+
+[node name="DamageFlash" type="ColorRect" parent="HUD/HealthHUD" unique_id=294443981]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.9063318, 0, 0, 1)
+
+[node name="HealthBox" type="Control" parent="HUD/HealthHUD" unique_id=1865224782]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -82.0
+offset_right = 200.0
+offset_bottom = -56.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="ChipBar" type="ProgressBar" parent="HUD/HealthHUD/HealthBox" unique_id=851263034]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_type_variation = &"HealthChipBar"
+value = 100.0
+show_percentage = false
+
+[node name="HealthBar" type="ProgressBar" parent="HUD/HealthHUD/HealthBox" unique_id=386800216]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_type_variation = &"HealthBar"
+value = 100.0
+show_percentage = false
+
+[node name="HealthLabel" type="Label" parent="HUD/HealthHUD/HealthBox" unique_id=175696752]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"BarValueLabel"
+text = "100 / 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StaminaBar" type="ProgressBar" parent="HUD/HealthHUD" unique_id=236377468]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -48.0
+offset_right = 200.0
+offset_bottom = -42.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_type_variation = &"StaminaBar"
+value = 100.0
+show_percentage = false
+script = ExtResource("16_stamina")
+
+[node name="GameOver" type="Control" parent="HUD/HealthHUD" unique_id=591576204]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="HUD/HealthHUD/GameOver" unique_id=536968416]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.65)
+
+[node name="CenterContainer" type="CenterContainer" parent="HUD/HealthHUD/GameOver" unique_id=6952159]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="HUD/HealthHUD/GameOver/CenterContainer" unique_id=968394830]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/HealthHUD/GameOver/CenterContainer/Panel" unique_id=1575820594]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="DeathLabel" type="Label" parent="HUD/HealthHUD/GameOver/CenterContainer/Panel/VBoxContainer" unique_id=1814292550]
+layout_mode = 2
+theme_type_variation = &"TitleLabel"
+text = "You Died"
+horizontal_alignment = 1
+
+[node name="SummaryLabel" type="Label" parent="HUD/HealthHUD/GameOver/CenterContainer/Panel/VBoxContainer" unique_id=1619402728]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Reached wave 3   ·   Level 4   ·   57 enemies defeated"
+horizontal_alignment = 1
+
+[node name="RestartButton" type="Button" parent="HUD/HealthHUD/GameOver/CenterContainer/Panel/VBoxContainer" unique_id=1650724579]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme_type_variation = &"BigButton"
+text = "Restart"
+
+[node name="QuitButton" type="Button" parent="HUD/HealthHUD/GameOver/CenterContainer/Panel/VBoxContainer" unique_id=1864156405]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Quit game"
+
+[node name="WaveBanner" parent="HUD" unique_id=910118211 instance=ExtResource("17_banner")]
+wave_complete_sound = SubResource("AudioStreamRandomizer_0e4v7")
+
+[node name="XPHUD" type="Control" parent="HUD" unique_id=2145706541]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("7_trceg")
+
+[node name="UpgradeMenu" type="Control" parent="HUD" unique_id=813398659]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("8_a8y0u")
+
+[node name="HandPanel" parent="HUD" unique_id=2018615630 instance=ExtResource("12_eb6dy")]
+unique_name_in_owner = true
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -24.0
+offset_right = 24.0
+offset_bottom = -24.0
+grow_vertical = 0
+side = 0
+
+[node name="HandPanel2" parent="HUD" unique_id=793892530 instance=ExtResource("12_eb6dy")]
+unique_name_in_owner = true
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = -24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="StanceQuickSwap" type="Control" parent="HUD" unique_id=1890615538]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("14_jkv2x")
+
+[node name="CenterContainer" type="CenterContainer" parent="HUD/StanceQuickSwap" unique_id=2128858189]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/StanceQuickSwap/CenterContainer" unique_id=2098381720]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="Cards" type="HBoxContainer" parent="HUD/StanceQuickSwap/CenterContainer/VBoxContainer" unique_id=1003152729]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 24
+
+[node name="SwapHint" type="PanelContainer" parent="HUD/StanceQuickSwap/CenterContainer/VBoxContainer" unique_id=844525420]
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+
+[node name="SwapHintLabel" type="Label" parent="HUD/StanceQuickSwap/CenterContainer/VBoxContainer/SwapHint" unique_id=1404898206]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"KeyHintLabel"
+text = "Release Tab to switch   ·   Scroll or 1-3 to pick"
+horizontal_alignment = 1
+
+[node name="StanceEditor" type="Control" parent="HUD" unique_id=1512134227 groups=["stance_editor"]]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("15_jkv2x")
+
+[node name="ColorRect" type="ColorRect" parent="HUD/StanceEditor" unique_id=2112251417]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.7019608)
+
+[node name="MarginContainer" type="MarginContainer" parent="HUD/StanceEditor" unique_id=2091637055]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 60
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 60
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/StanceEditor/MarginContainer" unique_id=1285834030]
+layout_mode = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="Label" type="Label" parent="HUD/StanceEditor/MarginContainer/VBoxContainer" unique_id=60610184]
+layout_mode = 2
+theme_type_variation = &"TitleLabel"
+text = "Loadout"
+horizontal_alignment = 1
+
+[node name="HintLabel" type="Label" parent="HUD/StanceEditor/MarginContainer/VBoxContainer" unique_id=799180049]
+unique_name_in_owner = true
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD/StanceEditor/MarginContainer/VBoxContainer" unique_id=1254162366]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="ArmoryPanel" type="PanelContainer" parent="HUD/StanceEditor/MarginContainer/VBoxContainer/HBoxContainer" unique_id=765662694]
+custom_minimum_size = Vector2(420, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/StanceEditor/MarginContainer/VBoxContainer/HBoxContainer/ArmoryPanel" unique_id=1999727171]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Label" type="Label" parent="HUD/StanceEditor/MarginContainer/VBoxContainer/HBoxContainer/ArmoryPanel/VBoxContainer" unique_id=500899873]
+layout_mode = 2
+theme_type_variation = &"HeaderLabel"
+text = "Weapons"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HUD/StanceEditor/MarginContainer/VBoxContainer/HBoxContainer/ArmoryPanel/VBoxContainer" unique_id=585626893]
+custom_minimum_size = Vector2(0, 340)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="ArmoryList" type="VBoxContainer" parent="HUD/StanceEditor/MarginContainer/VBoxContainer/HBoxContainer/ArmoryPanel/VBoxContainer/ScrollContainer" unique_id=405607670]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="StanceColumns" type="HBoxContainer" parent="HUD/StanceEditor/MarginContainer/VBoxContainer/HBoxContainer" unique_id=379426158]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="DoneButton" type="Button" parent="HUD/StanceEditor/MarginContainer/VBoxContainer" unique_id=508742581]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(420, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme_type_variation = &"BigButton"
+text = "Back to the fight"
+
+[node name="PauseMenu" parent="HUD" unique_id=420226445 instance=ExtResource("18_pause")]
+unique_name_in_owner = true

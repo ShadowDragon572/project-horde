@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://j4eb33xxh0hr"]
+
+[ext_resource type="Texture2D" uid="uid://cumf4fpulxxab" path="res://assets/PSX Textures/512x512/Stone/PTP-Stone_01-512x512.png" id="1_g8bsp"]
+
+[resource]
+albedo_color = Color(0.698975, 0.6205, 0.73, 1)
+albedo_texture = ExtResource("1_g8bsp")
+uv1_scale = Vector3(0.16, 0.16, 0.16)
+uv1_triplanar = true

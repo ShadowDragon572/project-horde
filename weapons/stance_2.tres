@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Stance" format=3 uid="uid://b7l0f7d22nn30"]
+
+[ext_resource type="Resource" uid="uid://xjk4frjmdg1x" path="res://weapons/pistol/pistol.tres" id="1_3m06x"]
+[ext_resource type="Resource" uid="uid://dnwqq2w738pvn" path="res://weapons/axe/axe.tres" id="1_28l04"]
+[ext_resource type="Script" uid="uid://7kqtc7vnyhgi" path="res://weapons/stance.gd" id="2_28l04"]
+
+[resource]
+script = ExtResource("2_28l04")
+display_name = "Stance 2"
+left = ExtResource("1_28l04")
+right = ExtResource("1_3m06x")
+metadata/_custom_type_script = "uid://7kqtc7vnyhgi"

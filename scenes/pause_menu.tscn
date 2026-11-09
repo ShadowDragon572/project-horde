@@ -1,0 +1,87 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/gui/pause_menu.gd" id="1_pause"]
+[ext_resource type="Script" path="res://scripts/gui/controls_list.gd" id="2_controls"]
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pause")
+
+[node name="Dim" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.75)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/Panel"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="CenterContainer/Panel/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"TitleLabel"
+text = "Paused"
+horizontal_alignment = 1
+
+[node name="MainButtons" type="VBoxContainer" parent="CenterContainer/Panel/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ResumeButton" type="Button" parent="CenterContainer/Panel/VBoxContainer/MainButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Resume"
+
+[node name="ControlsButton" type="Button" parent="CenterContainer/Panel/VBoxContainer/MainButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Controls"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/Panel/VBoxContainer/MainButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Quit game"
+
+[node name="ControlsBox" type="VBoxContainer" parent="CenterContainer/Panel/VBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="ControlsList" type="GridContainer" parent="CenterContainer/Panel/VBoxContainer/ControlsBox"]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("2_controls")
+
+[node name="BackButton" type="Button" parent="CenterContainer/Panel/VBoxContainer/ControlsBox"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Back"

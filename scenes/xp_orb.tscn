@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dy0s33ig2mwy"]
+
+[ext_resource type="Script" uid="uid://2ib08fkuracj" path="res://scripts/xp_orb.gd" id="1_pkphv"]
+
+[node name="XPOrb" type="Node3D" unique_id=1622862123]
+script = ExtResource("1_pkphv")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Stance" format=3 uid="uid://d10ttrhahs6o7"]
+
+[ext_resource type="Script" uid="uid://7kqtc7vnyhgi" path="res://weapons/stance.gd" id="1_opjjh"]
+[ext_resource type="Resource" uid="uid://pkqevebipfty" path="res://weapons/rifle/rifle.tres" id="2_1pf81"]
+
+[resource]
+script = ExtResource("1_opjjh")
+display_name = "Stance 1"
+right = ExtResource("2_1pf81")
+metadata/_custom_type_script = "uid://7kqtc7vnyhgi"

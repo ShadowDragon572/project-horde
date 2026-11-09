@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://22vwr1kq8sr3"]
+
+[ext_resource type="Shader" uid="uid://cky81v8js6840" path="res://materials/shaders/enemy_outline.gdshader" id="1_o18in"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_o18in")
+shader_parameter/outline_color = Color(0.8862745, 0.9137255, 0.73333335, 1)
+shader_parameter/outline_width = 20.0

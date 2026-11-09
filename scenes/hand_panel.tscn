@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://d37gyyijlf1ax"]
+
+[ext_resource type="Script" uid="uid://vs5s7k1exbnt" path="res://scripts/gui/hand_panel.gd" id="1_gsfb4"]
+[ext_resource type="Texture2D" uid="uid://bic8up326me41" path="res://icon.svg" id="2_my1cx"]
+
+[node name="HandPanel" type="PanelContainer" unique_id=2018615630]
+custom_minimum_size = Vector2(300, 0)
+offset_right = 300.0
+offset_bottom = 140.0
+mouse_filter = 2
+script = ExtResource("1_gsfb4")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2042480589]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=979504269]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="Icon" type="TextureRect" parent="MarginContainer/HBoxContainer" unique_id=1014677471]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("2_my1cx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=666208026]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="NameLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1773732515]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WeaponNameLabel"
+text = "Test Name"
+
+[node name="AmmoLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=934751393]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WeaponAmmoLabel"
+text = "20 / 20"
+
+[node name="ReloadBar" type="ProgressBar" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=983658633]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"ReloadBar"
+show_percentage = false
+
+[node name="KeysLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=818105763]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"KeyHintLabel"
+text = "LMB  ·  reload Q"

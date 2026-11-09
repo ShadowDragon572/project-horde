@@ -1,0 +1,91 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/gui/wave_banner.gd" id="1_banner"]
+[ext_resource type="Script" path="res://scripts/gui/controls_list.gd" id="2_controls"]
+
+[node name="WaveBanner" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_banner")
+
+[node name="Flash" type="ColorRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0.96, 0.88, 0)
+
+[node name="Banner" type="Label" parent="."]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchor_top = 0.28
+anchor_right = 1.0
+anchor_bottom = 0.28
+offset_top = -70.0
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"BannerLabel"
+text = "WAVE 1 COMPLETE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BreakBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.33
+anchor_right = 0.5
+anchor_bottom = 0.33
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="Prompt" type="PanelContainer" parent="BreakBox"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+
+[node name="PromptLabel" type="Label" parent="BreakBox/Prompt"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Next wave in 15   ·   [B] Change loadout   ·   [G] Ready"
+horizontal_alignment = 1
+
+[node name="ControlsCard" type="PanelContainer" parent="BreakBox"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BreakBox/ControlsCard"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="Header" type="Label" parent="BreakBox/ControlsCard/VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"HeaderLabel"
+text = "Controls"
+horizontal_alignment = 1
+
+[node name="ControlsList" type="GridContainer" parent="BreakBox/ControlsCard/VBoxContainer"]
+layout_mode = 2
+script = ExtResource("2_controls")
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+process_mode = 3

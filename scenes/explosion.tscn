@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://pu87ynaivlrq"]
+
+[ext_resource type="Script" uid="uid://cs5cpt083yaje" path="res://scripts/explosion.gd" id="1_17npe"]
+[ext_resource type="AudioStream" uid="uid://c13orl6wma7h3" path="res://assets/audio/explosion.mp3" id="2_nfeox"]
+
+[node name="Explosion" type="Node3D" unique_id=990385483]
+script = ExtResource("1_17npe")
+sound = ExtResource("2_nfeox")
+sound_volume_db = 1.0

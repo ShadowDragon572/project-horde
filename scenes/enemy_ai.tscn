@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://0t4uddqn8qlm"]
+
+[ext_resource type="Script" uid="uid://bjukbfwqiy1q3" path="res://scripts/enemy_ai.gd" id="1_wq6tc"]
+[ext_resource type="Texture2D" uid="uid://b0sgbergqwkl4" path="res://assets/PSX Textures/512x512/Elements/PTP-Elements_12-512x512.png" id="2_1buyy"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5ro2l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1buyy"]
+render_priority = 1
+transparency = 1
+shading_mode = 0
+grow = true
+grow_amount = 0.1
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bq26l"]
+next_pass = SubResource("StandardMaterial3D_1buyy")
+albedo_color = Color(1, 0.92, 0.52, 1)
+albedo_texture = ExtResource("2_1buyy")
+uv1_scale = Vector3(1.165, 1.165, 1.165)
+uv1_triplanar = true
+distance_fade_max_distance = 20.0
+stencil_mode = 1
+stencil_flags = 2
+stencil_color = Color(1, 1, 1, 1)
+stencil_outline_thickness = 0.1
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_5ro2l"]
+material = SubResource("StandardMaterial3D_bq26l")
+
+[node name="EnemyAI" type="CharacterBody3D" unique_id=124476408]
+slide_on_ceiling = false
+script = ExtResource("1_wq6tc")
+max_health = null
+xp_value = null
+lunge_range = null
+hit_range = null
+max_height_difference = null
+stop_distance = null
+attack_damage = null
+windup_time = null
+lunge_speed = null
+lunge_time = null
+recover_time = null
+lean_angle = null
+windup_color = null
+windup_blinks = null
+speed = null
+ground_acceleration = null
+ground_deceleration = null
+air_control = null
+repath_distance = null
+turn_speed = null
+gravity_scale = null
+fall_gravity_multiplier = null
+gravity_growth = null
+max_gravity_multiplier = null
+terminal_velocity = null
+kill_height = null
+max_jump_height = null
+jump_clearance = null
+jump_cooldown = null
+ledge_check_distance = null
+ground_mask = null
+shortcut_ratio = 1.2
+shortcut_max_distance = null
+shortcut_commit_time = null
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2062021234]
+shape = SubResource("CapsuleShape3D_5ro2l")
+
+[node name="Visual" type="Node3D" parent="." unique_id=1366722788]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Visual" unique_id=2003102005]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_5ro2l")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=810022373]
+unique_name_in_owner = true

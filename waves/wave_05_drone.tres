@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://dhi0lopkhcdp4"]
+
+[ext_resource type="Script" uid="uid://cncc7a7jhq8v5" path="res://waves/enemy_spawn.gd" id="1_0atyb"]
+[ext_resource type="PackedScene" uid="uid://t5xytbg13j4n" path="res://scenes/enemy_drone.tscn" id="5_akv1h"]
+[ext_resource type="Script" uid="uid://chodr5iisn8oc" path="res://waves/wave_data.gd" id="6_x0evc"]
+
+[sub_resource type="Resource" id="Resource_fs80w"]
+script = ExtResource("1_0atyb")
+enemy_scene = ExtResource("5_akv1h")
+count = 10
+metadata/_custom_type_script = "uid://cncc7a7jhq8v5"
+
+[resource]
+script = ExtResource("6_x0evc")
+groups = Array[ExtResource("1_0atyb")]([SubResource("Resource_fs80w")])
+spawn_interval = 0.4
+burst_size = 2
+metadata/_custom_type_script = "uid://chodr5iisn8oc"

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b75gmaiw8344"]
+
+[ext_resource type="Texture2D" uid="uid://cb2fcyu25piay" path="res://assets/PSX Textures/512x512/Metal/PTP-Metal_08-512x512.png" id="1_71nmr"]
+
+[resource]
+albedo_texture = ExtResource("1_71nmr")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+uv1_triplanar = true

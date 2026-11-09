@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://chfyy33l4shwu"]
+
+[ext_resource type="Script" uid="uid://cncc7a7jhq8v5" path="res://waves/enemy_spawn.gd" id="1_engqy"]
+[ext_resource type="PackedScene" uid="uid://0t4uddqn8qlm" path="res://scenes/enemy_ai.tscn" id="2_hucmp"]
+[ext_resource type="Script" uid="uid://chodr5iisn8oc" path="res://waves/wave_data.gd" id="3_ani21"]
+[ext_resource type="PackedScene" uid="uid://catg23maonffh" path="res://scenes/enemy_fast.tscn" id="3_hucmp"]
+
+[sub_resource type="Resource" id="Resource_1a1mg"]
+script = ExtResource("1_engqy")
+enemy_scene = ExtResource("2_hucmp")
+count = 8
+metadata/_custom_type_script = "uid://cncc7a7jhq8v5"
+
+[sub_resource type="Resource" id="Resource_mbo2f"]
+script = ExtResource("1_engqy")
+enemy_scene = ExtResource("3_hucmp")
+count = 4
+metadata/_custom_type_script = "uid://cncc7a7jhq8v5"
+
+[resource]
+script = ExtResource("3_ani21")
+groups = Array[ExtResource("1_engqy")]([SubResource("Resource_1a1mg"), SubResource("Resource_mbo2f")])
+spawn_interval = 0.4
+burst_size = 2
+metadata/_custom_type_script = "uid://chodr5iisn8oc"

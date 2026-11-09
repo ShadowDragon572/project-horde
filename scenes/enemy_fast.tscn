@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://catg23maonffh"]
+
+[ext_resource type="PackedScene" uid="uid://0t4uddqn8qlm" path="res://scenes/enemy_ai.tscn" id="1_na3cw"]
+[ext_resource type="Texture2D" uid="uid://b0sgbergqwkl4" path="res://assets/PSX Textures/512x512/Elements/PTP-Elements_12-512x512.png" id="2_00nrq"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_na3cw"]
+radius = 0.4
+height = 1.6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1buyy"]
+render_priority = 1
+transparency = 1
+shading_mode = 0
+grow = true
+grow_amount = 0.1
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pufb0"]
+next_pass = SubResource("StandardMaterial3D_1buyy")
+albedo_color = Color(0.99, 0.5049, 0.5049, 1)
+albedo_texture = ExtResource("2_00nrq")
+uv1_scale = Vector3(1.165, 1.165, 1.165)
+uv1_triplanar = true
+distance_fade_max_distance = 20.0
+stencil_mode = 1
+stencil_flags = 2
+stencil_color = Color(1, 1, 1, 1)
+stencil_outline_thickness = 0.1
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ulpps"]
+material = SubResource("StandardMaterial3D_pufb0")
+
+[node name="EnemyFast" unique_id=124476408 instance=ExtResource("1_na3cw")]
+max_health = 2
+hit_range = 1.2
+stop_distance = 1.2
+attack_damage = 6
+windup_time = 0.3
+lunge_speed = 16.0
+recover_time = 0.4
+windup_color = Color(0.95, 0.72833335, 0, 1)
+speed = 9.0
+
+[node name="CollisionShape3D" parent="." index="0" unique_id=2062021234]
+shape = SubResource("CapsuleShape3D_na3cw")
+
+[node name="Visual" parent="." index="1" unique_id=1366722788]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, -0.8, 0)
+
+[node name="MeshInstance3D" parent="Visual" index="0" unique_id=2003102005]
+mesh = SubResource("CapsuleMesh_ulpps")

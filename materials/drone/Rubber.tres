@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dkrg672n7gdkt"]
+
+[ext_resource type="Shader" uid="uid://cv2i7ct3e7gsi" path="res://materials/shaders/outline_from_center.gdshader" id="1_3xa16"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wjrws"]
+render_priority = 1
+shader = ExtResource("1_3xa16")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.04
+shader_parameter/center = Vector3(0, 0, 0)
+
+[resource]
+resource_name = "Rubber"
+next_pass = SubResource("ShaderMaterial_wjrws")
+cull_mode = 2
+albedo_color = Color(0, 0, 0, 1)
+stencil_mode = 3
+stencil_flags = 2
+stencil_color = Color(1, 1, 1, 1)
+stencil_outline_thickness = 0.1

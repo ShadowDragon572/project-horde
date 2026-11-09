@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://g7hys45ykqtt"]
+
+[ext_resource type="ArrayMesh" uid="uid://4xp3skmvum43" path="res://assets/meshes/Sketchfab_Scene_MSR_Grey_0.res" id="1_f5wln"]
+
+[node name="PistolMesh" type="MeshInstance3D" unique_id=1897763549]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("1_f5wln")
+
+[node name="Muzzle" type="Marker3D" parent="." unique_id=224789622]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4147544, -0.8539934, 0.00044238567)
+
+[node name="MuzzleFlash" type="OmniLight3D" parent="Muzzle" unique_id=714862643]
+unique_name_in_owner = true
+light_color = Color(1, 0.62, 0.050000012, 1)
+light_energy = 0.0
+omni_range = 4.0

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cqo5evxl2clh0"]
+
+[ext_resource type="Script" uid="uid://biemwedrdidit" path="res://scripts/impact_sparks.gd" id="1_ul5n6"]
+
+[node name="ImpactSparks" type="CPUParticles3D" unique_id=389590273]
+script = ExtResource("1_ul5n6")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dyfqlxl0uljbb"]
+
+[ext_resource type="Script" uid="uid://dud6wix3f0e6n" path="res://scripts/damage_number.gd" id="1_aie4f"]
+
+[node name="DamageNumber" type="Label3D" unique_id=1573092278]
+pixel_size = 0.01
+billboard = 1
+no_depth_test = true
+font_size = 64
+script = ExtResource("1_aie4f")
