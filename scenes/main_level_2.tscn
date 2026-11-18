@@ -331,30 +331,6 @@ size = Vector3(42.266876, 26.454035, 3.2612839)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.880665, 5.542652, -6.5786285)
 size = Vector3(1.1259766, 5.5275955, 7.7915363)
 
-[node name="CSGBox3D6" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2" unique_id=208303793]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.136768, 4.53899, 7.8110313)
-size = Vector3(1.6381836, 3.5202715, 7.7915363)
-
-[node name="CSGBox3D7" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2" unique_id=721418152]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.537617, 4.8140755, 4.3751106)
-size = Vector3(5.8120728, 4.070442, 0.91969395)
-
-[node name="CSGBox3D10" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2" unique_id=698690409]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.354023, 4.8140755, 11.482166)
-size = Vector3(3.4813538, 4.070442, 3.391572)
-
-[node name="CSGBox3D11" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2" unique_id=59951859]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9823456, 4.371233, 13.779293)
-size = Vector3(3.4813538, 3.1847572, 3.391572)
-
-[node name="CSGBox3D12" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2" unique_id=826302541]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2107506, 4.6040964, 16.227455)
-size = Vector3(3.4813538, 3.650484, 3.391572)
-
-[node name="CSGBox3D8" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2" unique_id=1212177750]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9953995, 4.3849983, 0.63467026)
-size = Vector3(1.5192261, 3.2122881, 8.400578)
-
 [node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2" unique_id=425728564]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.804031, 3.6235585, 5.372246)
 size = Vector3(9.141235, 1.6892548, 0.94921875)
@@ -469,6 +445,56 @@ depth = 4.0
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -20.054531, 8.890852, 2.7971878)
 polygon = PackedVector2Array(-9.270058, 4.5913544, -9.269751, 2.589795, 8.516727, -1.2892089, 8.517696, -0.058859825)
 depth = 4.0
+
+[node name="Barricades" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area2" unique_id=1708951372]
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=208303793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.136768, 4.53899, 7.8110313)
+size = Vector3(1.6381836, 3.5202715, 7.7915363)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=721418152]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.537617, 4.8140755, 4.3751106)
+size = Vector3(5.8120728, 4.070442, 0.91969395)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=698690409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.354023, 4.8140755, 11.482166)
+size = Vector3(3.4813538, 4.070442, 3.391572)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=888347515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.518574, 4.1554127, 14.789513)
+size = Vector3(2.1669464, 2.7531166, 3.391572)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=1305831163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.597485, 4.719819, 15.282101)
+size = Vector3(2.8261604, 3.8819294, 4.5111675)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=1278832996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.669266, 4.4532175, 16.753994)
+size = Vector3(2.1669464, 3.3487263, 3.0280688)
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=555366823]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.81446075, 4.1554127, 19.05439)
+size = Vector3(4.305641, 2.7531166, 3.391572)
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=16424152]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.307682, 4.719819, 20.435505)
+size = Vector3(2.8261604, 3.8819294, 4.5111675)
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=1703916798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3794632, 4.4532175, 21.27491)
+size = Vector3(2.1669464, 3.3487263, 3.0280688)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=59951859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9823456, 4.371233, 13.779293)
+size = Vector3(3.4813538, 3.1847572, 3.391572)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=826302541]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2107506, 4.6040964, 16.227455)
+size = Vector3(3.4813538, 3.650484, 3.391572)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=1212177750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9953995, 4.3849983, 0.63467026)
+size = Vector3(1.5192261, 3.2122881, 8.400578)
 
 [node name="PlaceHolders" type="CSGCombiner3D" parent="NavigationRegion3D" unique_id=1673596739]
 
