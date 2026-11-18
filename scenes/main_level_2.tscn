@@ -381,8 +381,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.535976, 6.7132616, -22.96
 size = Vector3(4.687462, 11.429706, 3.9676056)
 
 [node name="CSGBox3D36" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Walls" unique_id=1868560738]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.81562, 16.415854, 12.814213)
-size = Vector3(17.529709, 27.301903, 0.6870127)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.81562, 16.415854, 12.977177)
+size = Vector3(17.529709, 27.301903, 1.0129399)
 
 [node name="CSGBox3D39" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Walls/CSGBox3D36" unique_id=1261521254]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7877426, -10.645462, 0)
@@ -413,8 +413,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04663086, 6.0503545, -4.144
 size = Vector3(4, 6.543, 12.659)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Stairs" unique_id=1917934494]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.428493, 12.480039, -9.072441)
-size = Vector3(6.7304688, 2, 5.2006307)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.058514, 12.480039, -7.1058083)
+size = Vector3(9.470428, 2, 9.133898)
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Stairs" unique_id=925621121]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.763813, 20.778835, -16.968376)
@@ -438,23 +438,23 @@ depth = 4.0
 
 [node name="CSGPolygon3D4" type="CSGPolygon3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Stairs" unique_id=547231594]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.931358, 8.890852, -10.478683)
-polygon = PackedVector2Array(6.1339417, 4.5890627, 6.1331787, 2.590129, -8.002628, -1.7824183, -7.97876, 0.43065643)
+polygon = PackedVector2Array(3.3921509, 4.5891657, 3.3985138, 2.5917091, -7.9562416, -1.3913493, -7.97876, 0.43065643)
 depth = 4.0
 
 [node name="CSGPolygon3D6" type="CSGPolygon3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Stairs" unique_id=2004151354]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -20.054531, 8.890852, 2.7971878)
-polygon = PackedVector2Array(-9.270058, 4.5913544, -9.269751, 2.589795, 8.516727, -1.2892089, 8.517696, -0.058859825)
+polygon = PackedVector2Array(-5.337803, 4.5890465, -5.3351746, 2.5894785, 8.860325, -2.034933, 8.852776, -0.03791523)
 depth = 4.0
 
 [node name="Barricades" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area2" unique_id=1708951372]
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=208303793]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.136768, 4.53899, 7.8110313)
-size = Vector3(1.6381836, 3.5202715, 7.7915363)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.702869, 4.53899, 7.8110313)
+size = Vector3(0.77038574, 3.5202715, 7.7915363)
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=721418152]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.537617, 4.8140755, 4.3751106)
-size = Vector3(5.8120728, 4.070442, 0.91969395)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.214481, 4.8140755, 4.3751106)
+size = Vector3(5.165802, 4.070442, 0.91969395)
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area2/Barricades" unique_id=698690409]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.354023, 4.8140755, 11.482166)
