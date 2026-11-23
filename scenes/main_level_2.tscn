@@ -59,7 +59,7 @@ navigation_mesh = SubResource("NavigationMesh_rg8a4")
 use_collision = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=556378622]
-size = Vector3(200, 2, 200)
+size = Vector3(200, 2, 314.90234)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=1926669488]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.043423, 35.288452, -4.7844505)
@@ -78,12 +78,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.042812, 27.077148, -4.784
 size = Vector3(18.347412, 52.154297, 40)
 
 [node name="CSGBox3D24" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=335120518]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.018112, 11.649506, -14.972214)
-size = Vector3(14.510338, 21.299011, 19.281868)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.018112, 11.649506, -12.59828)
+size = Vector3(14.510338, 21.299011, 14.534)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=1057697689]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.398579, 27.077148, 25.903349)
 size = Vector3(40, 52.154297, 40)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=2100313783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.158894, 16.14679, -56.668907)
+size = Vector3(16.47937, 30.29358, 13.838989)
 
 [node name="CSGBox3D26" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=1749854401]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.45533, 8.645325, 63.316536)
@@ -151,12 +155,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.552, 17.323, 0.591)
 size = Vector3(10.787, 2, 50.801)
 
 [node name="CSGBox3D15" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=556679283]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.168404, 5.8165836, -72.67444)
-size = Vector3(112.85972, 10.160156, 17.786552)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.168655, 5.8165836, -72.67444)
+size = Vector3(40.859215, 10.160156, 17.786552)
 
 [node name="CSGBox3D23" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=1833382718]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.86187, 13.484858, -48.64808)
-size = Vector3(23.397734, 25.496704, 30.373867)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.86187, 13.484858, -39.537766)
+size = Vector3(23.397734, 25.496704, 12.153242)
 
 [node name="CSGBox3D12" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=345333431]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.316967, 27.81546, 35.928993)
@@ -697,6 +701,13 @@ size = Vector3(29.153687, 8.0216675, 17.452148)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6473389, 6.3820815, 0.94109344)
 size = Vector3(10.503296, 11.623354, 47.645508)
 
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Sewer/CSGBox3D19" unique_id=1452224828]
+transform = Transform3D(0.99999994, 1.01445066e-16, -2.8990211e-18, -1.7763568e-15, 0.057108436, 0.998368, -3.3086698e-24, -0.99836797, 0.05710845, -0.91589355, -3.1971586, -12.235147)
+operation = 2
+radius = 3.317871
+height = 23.615757
+sides = 16
+
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Sewer/CSGBox3D19" unique_id=1386061183]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.55231476, -3.6088066, 0)
 operation = 2
@@ -768,8 +779,20 @@ size = Vector3(10.516235, 9.281435, 47.645508)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.659622, 7.1638722, -41.892406)
 
 [node name="CSGBox3D16" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks" unique_id=1151540204]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.265396, 3.7791286, -3.4014244)
-size = Vector3(8.10788, 19.886003, 4.4435487)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.181999, 2.0288186, -2.1670952)
+size = Vector3(5.9410934, 16.385384, 6.912204)
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks" unique_id=1692526636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.250549, 6.5241675, -2.1670952)
+size = Vector3(9.194685, 7.3946857, 6.912204)
+
+[node name="CSGBox3D22" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks" unique_id=704308668]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.759277, 3.07694, -2.1670952)
+size = Vector3(2.0052142, 14.28914, 6.912204)
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks" unique_id=424734835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.793053, 3.7791286, -3.4014244)
+size = Vector3(7.1631927, 19.886003, 4.4435487)
 
 [node name="CSGBox3D17" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks" unique_id=1351145165]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.068, 6.856457, 7.952347)
@@ -802,8 +825,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.480461, 9.680346, -3.40142
 size = Vector3(20.48309, 13.4508705, 4.4435487)
 
 [node name="CSGBox3D22" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=102363939]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2435532, 1.4038339, -0.5701332)
-size = Vector3(11.512451, 13.794689, 14.953015)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2435532, 4.17983, -0.5701332)
+size = Vector3(11.512451, 19.346682, 14.953015)
 
 [node name="CSGBox3D28" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=1881376183]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.95215607, 2.619927, -15.438133)
@@ -817,13 +840,21 @@ size = Vector3(7.953003, 2.3400235, 12.345942)
 transform = Transform3D(-0.9560492, 0, -0.29320633, 0, 1, 0, 0.29320633, 0, -0.9560492, 14.716141, 2.619927, -9.189915)
 size = Vector3(7.953003, 2.3400235, 12.345942)
 
+[node name="CSGBox3D47" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=1382791315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.278687, 2.619927, -3.7898521)
+size = Vector3(6, 2.34, 5.2623553)
+
 [node name="CSGBox3D11" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=418551152]
 transform = Transform3D(0.9424059, 0, 0.3344714, 0, 1, 0, -0.3344714, 0, 0.9424059, -18.251137, -2.3097148, -1.8973122)
 size = Vector3(13.4765625, 7.7083173, 7.067151)
 
 [node name="CSGBox3D27" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=1000015162]
-transform = Transform3D(-0.0086123645, 0, -0.999963, 0, 1, 0, 0.999963, 0, -0.0086123645, 20.090767, -0.84293413, -11.353893)
+transform = Transform3D(0.24150936, 0, -0.97039855, 0, 1, 0, 0.97039855, 0, 0.24150936, 19.643301, -0.84293413, -11.24253)
 size = Vector3(12.840088, 9.301153, 5.7769227)
+
+[node name="CSGBox3D46" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=1033200507]
+transform = Transform3D(-0.0086123645, 0, -0.999963, 0, 1, 0, 0.999963, 0, -0.0086123645, 20.473808, -0.84293413, -4.870781)
+size = Vector3(7.5813293, 9.301153, 4.8992033)
 
 [node name="CSGBox3D31" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=1404402935]
 transform = Transform3D(0.84420013, 0, -0.53602815, 0, 1, 0, 0.53602815, 0, 0.84420013, 13.917915, -0.846169, -17.782303)
@@ -834,8 +865,8 @@ transform = Transform3D(0.86634576, 0, -0.49944478, 0, 1, 0, 0.49944478, 0, 0.86
 size = Vector3(5.4944506, 13.794689, 4.5931563)
 
 [node name="CSGBox3D44" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=1533481680]
-transform = Transform3D(0.36688763, 0, -0.9302653, 0, 1, 0, 0.9302653, 0, 0.36688763, 10.223686, 1.4038339, -7.293392)
-size = Vector3(5.612447, 13.794689, 4.5931563)
+transform = Transform3D(0.20061697, 0, -0.97966975, 0, 1, 0, 0.97966975, 0, 0.20061697, 9.609659, 1.4038339, -7.673796)
+size = Vector3(5.1400857, 13.794689, 4.5931563)
 
 [node name="CSGBox3D26" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=100041354]
 transform = Transform3D(0.9302272, 0, 0.36698416, 0, 1, 0, -0.36698416, 0, 0.9302272, -4.171631, 1.4038339, -4.2617645)
@@ -844,6 +875,10 @@ size = Vector3(4.071991, 13.794689, 8.447167)
 [node name="CSGBox3D14" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=660900207]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5310707, 2.619927, 5.022064)
 size = Vector3(6, 2.3400235, 11.937)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=145099073]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5310707, 5.7028728, 10.712406)
+size = Vector3(8.59668, 6.3247967, 3.9242525)
 
 [node name="CSGBox3D34" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area3/Rocks/Tunnel" unique_id=657678128]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.180489, 2.619927, -2.897438)
@@ -1169,6 +1204,827 @@ depth = 6.0
 transform = Transform3D(0.76604444, 0, -0.6427876, 0, 1, 0, 0.6427876, 0, 0.76604444, -12.446678, 17.323, 30.88591)
 size = Vector3(6, 2, 16.476225)
 
+[node name="Area4" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=816631732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.248096, 0, -136.14014)
+
+[node name="CSGBox3D23" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1331090309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.58252, 0, 32.716766)
+size = Vector3(32.375458, 2, 110.24384)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=4541580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.045645, 10.927254, 69.092285)
+size = Vector3(13.347935, 19.964722, 29.615818)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1981787030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2793922, 7.2746353, 67.30416)
+size = Vector3(13.875275, 12.659485, 26.039566)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1622496195]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7151642, 7.275917, 49.564568)
+size = Vector3(23.00373, 12.662048, 9.46254)
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1067427472]
+transform = Transform3D(0.7263589, 0, -0.68731564, 0, 1, 0, 0.68731564, 0, 0.7263589, 4.492668, 7.275917, 45.33548)
+size = Vector3(17.06087, 12.662048, 17.920723)
+
+[node name="CSGBox3D20" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=68291233]
+transform = Transform3D(0.7263589, 0, -0.68731564, 0, 1, 0, 0.68731564, 0, 0.7263589, 14.564053, 3.853325, 29.933662)
+size = Vector3(6.26533, 5.816864, 9.161557)
+
+[node name="CSGBox3D25" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1407235485]
+transform = Transform3D(0.7263589, 0, -0.68731564, 0, 1, 0, 0.68731564, 0, 0.7263589, 14.564053, 7.064541, 29.933662)
+size = Vector3(6.6, 0.7262497, 9.400001)
+
+[node name="CSGBox3D24" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=40396322]
+transform = Transform3D(0.7263589, 0, -0.68731564, 0, 1, 0, 0.68731564, 0, 0.7263589, 14.564053, 1.170105, 29.933662)
+size = Vector3(6.9, 0.4504242, 9.7)
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1204151157]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.848255, 7.275917, 46.277466)
+size = Vector3(88.82356, 12.662048, 6.657173)
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/CSGBox3D17" unique_id=2141179845]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 12.151741, -3.5539165, -0.61963654)
+operation = 2
+radius = 3.317871
+height = 16.814026
+sides = 16
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1171635476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.496994, 7.275917, 54.88508)
+size = Vector3(29.755503, 12.662048, 10.909763)
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/CSGBox3D21" unique_id=1466716873]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 0, 1, -1, 4.371139e-08, -4.3711385e-08, 2.1556396, -3.553916, -1.060379)
+operation = 2
+radius = 3.317871
+height = 27.246368
+sides = 16
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/CSGBox3D21" unique_id=927500462]
+transform = Transform3D(1, 0, 5.646419e-23, 0, -4.371139e-08, 1, 8.3518705e-23, -1, -4.371139e-08, -7.4969864, -3.5539155, -3.9592285)
+operation = 2
+radius = 3.317871
+height = 6.2779846
+sides = 16
+
+[node name="CSGBox3D22" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=141147509]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 97.87627, 7.275917, 68.98091)
+size = Vector3(15.536443, 12.662048, 39.10143)
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/CSGBox3D22" unique_id=14691562]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 0, 1, -1, 4.371139e-08, -4.3711385e-08, -2.4136658, -3.553916, -15.156212)
+operation = 2
+radius = 3.317871
+height = 11.618355
+sides = 16
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/CSGBox3D22" unique_id=450352865]
+transform = Transform3D(0.99999994, 0, 0, -1.7763568e-15, -4.371139e-08, 1, 0, -0.99999994, -4.3711385e-08, -0.13794708, -3.5539153, 1.6341629)
+operation = 2
+radius = 3.317871
+height = 36.9767
+sides = 16
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=490167561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.558727, 7.2987137, 70.863846)
+size = Vector3(13.875275, 12.707642, 17.125916)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1649940458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.248854, 8.314766, 62.51616)
+size = Vector3(8.891251, 14.739746, 37.495308)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1362465555]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.472137, 14.154243, 43.535088)
+size = Vector3(18.888985, 26.418701, 10.485233)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=600757194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.50933, 12.130562, 38.876564)
+size = Vector3(14.814592, 22.371338, 13.695649)
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=698670152]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.742424, 10.355019, 24.312454)
+size = Vector3(12.348406, 18.820251, 15.843468)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1623122139]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.650436, 16.530037, 21.863533)
+size = Vector3(10.913242, 31.170288, 39.69095)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=2072627394]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.80882, 7.0961227, -2.5542755)
+size = Vector3(90.759384, 12.30246, 6.767456)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=604621314]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102.39673, 7.0961227, 7.0950546)
+size = Vector3(8.021584, 12.30246, 13.361145)
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1655333183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.497314, 7.0961227, 41.782455)
+size = Vector3(8.021584, 12.30246, 14.028114)
+
+[node name="Building" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=605825253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.342886, 0, -8.032501)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=793525116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5923166, 14.807015, -3.1643372)
+radius = 35.0
+height = 27.60852
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=525272626]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5923166, 15.82782, -3.1643524)
+radius = 45.0
+height = 4.401245
+sides = 16
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=1625050017]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5923166, 28.947342, -3.1643524)
+radius = 36.0
+height = 2.4284515
+sides = 16
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=96447202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5923166, 30.557095, -3.1643448)
+radius = 37.0
+height = 1.0594406
+sides = 16
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=688157584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5923166, 19.091682, -3.1643448)
+radius = 46.0
+height = 1.942749
+sides = 16
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=335286752]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4450836, 1.5021096, 38.310257)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D" unique_id=207941612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6362609, 0)
+size = Vector3(3, 4.272522, 3)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D" unique_id=858700549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.62541, 0)
+radius = 1.1757813
+height = 13.703125
+sides = 16
+
+[node name="CSGCombiner3D6" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=162031108]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1542177, 1.5021096, 38.310257)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D6" unique_id=989003778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6362609, 0)
+size = Vector3(3, 4.272522, 3)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D6" unique_id=828495734]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.62541, 0)
+radius = 1.1757813
+height = 13.703125
+sides = 16
+
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=1693161769]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.479845, 1.5021096, 34.956253)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D2" unique_id=1343026071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6362609, 0)
+size = Vector3(3, 4.272522, 3)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D2" unique_id=199594500]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.62541, 0)
+radius = 1.1757813
+height = 13.703125
+sides = 16
+
+[node name="CSGCombiner3D3" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=546477455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.31557, 1.5021096, 30.004112)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D3" unique_id=335823687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6362609, 0)
+size = Vector3(3, 4.272522, 3)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D3" unique_id=1050123750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.62541, 0)
+radius = 1.1757813
+height = 13.703125
+sides = 16
+
+[node name="CSGCombiner3D4" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=2045186245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.53604, 1.5021096, 22.0448)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D4" unique_id=1921806594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6362609, 0)
+size = Vector3(3, 4.272522, 3)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D4" unique_id=179243710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.62541, 0)
+radius = 1.1757813
+height = 13.703125
+sides = 16
+
+[node name="CSGCombiner3D5" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=33063805]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.362595, 1.5021096, 14.476265)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D5" unique_id=2146829929]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6362609, 0)
+size = Vector3(3, 4.272522, 3)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGCombiner3D5" unique_id=844653482]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.62541, 0)
+radius = 1.1757813
+height = 13.703125
+sides = 16
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=1917620484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.794097, 13.880745, -19.064247)
+size = Vector3(61.044556, 25.871704, 32.799805)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building" unique_id=1411076026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5923166, 23.931509, -3.1643448)
+radius = 37.0
+radial_segments = 16
+rings = 18
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Building/CSGSphere3D" unique_id=1916447656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.7227993, 0)
+operation = 2
+size = Vector3(80.325195, 25.158108, 77.41968)
+
+[node name="Substation" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1654117946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.55135, 0, 16.334496)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation" unique_id=1475253775]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8499832, 0, 0)
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D" unique_id=1231610358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00020599365, 1.9769478, 5.5048523)
+size = Vector3(12, 2, 42.284)
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D" unique_id=1830602378]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00020599365, 4.449273, 21.090141)
+size = Vector3(2, 6.9443874, 11.11342)
+
+[node name="CSGBox3D20" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D" unique_id=464771253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00020599365, 4.449273, -12.073128)
+size = Vector3(2, 6.9443874, 11.568986)
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D" unique_id=984951873]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.369728, 1.9769478, 26.619354)
+polygon = PackedVector2Array(-1.3694534, 1.0000513, -1.3734055, -0.975147, 2.4919586, -0.9802332)
+depth = 42.5
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D" unique_id=1019373775]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -7.36565, 1.9769478, -15.51886)
+polygon = PackedVector2Array(-1.3694534, 1.0000513, -1.3734055, -0.975147, 2.4919586, -0.9802332)
+depth = 42.5
+
+[node name="Generator" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D" unique_id=2013614606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8029938, 3.0818563, -2.3715973)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=656222824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8788452, -0.13873291, -0.6994858)
+size = Vector3(8.75769, 0.7225342, 7.796997)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=804839350]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5932808, 0.63401794, -0.34552765)
+size = Vector3(4.515625, 2.268036, 3.7040443)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=1364399202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.826229, 0.61340714, -1.186264)
+size = Vector3(5.401367, 0.9278183, 6.4745035)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=736537381]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.826229, 3.136746, -3.0376968)
+size = Vector3(4.7041016, 5.974498, 1.9598124)
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=936617465]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 7.2200317, 3.3704977, -0.026908875)
+radius = 3.1289063
+height = 1.1119385
+sides = 16
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=1187768151]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.42377853, 3.3704975, -0.026908875)
+radius = 3.1289063
+height = 1.1119385
+sides = 16
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=1388929804]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.7118568, 3.3704977, -0.026908875)
+radius = 2.0942383
+height = 5.931305
+sides = 16
+
+[node name="CSGCylinder3D12" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=1943273241]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.7915688, 3.3704977, -0.026908875)
+radius = 1.168457
+height = 10.260498
+sides = 16
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=922539645]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 4.3099937, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.63217926
+sides = 16
+
+[node name="CSGCylinder3D10" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=1169383757]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 5.2275734, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.8992691
+sides = 16
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=1136678349]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.208271, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.68698883
+sides = 16
+
+[node name="CSGCylinder3D11" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator" unique_id=1900120968]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 2.2930107, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.6674576
+sides = 16
+
+[node name="Generator2" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D" unique_id=586112004]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.6984394, 3.0818563, 12.596772)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=336986437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8788452, -0.13873291, -0.6994858)
+size = Vector3(8.75769, 0.7225342, 7.796997)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=1368739773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5932808, 0.63401794, -0.34552765)
+size = Vector3(4.515625, 2.268036, 3.7040443)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=563484289]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.826229, 0.61340714, -1.186264)
+size = Vector3(5.401367, 0.9278183, 6.4745035)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=1701515592]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.826229, 3.136746, -3.0376968)
+size = Vector3(4.7041016, 5.974498, 1.9598124)
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=783035866]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 7.2200317, 3.3704977, -0.026908875)
+radius = 3.1289063
+height = 1.1119385
+sides = 16
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=691211430]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.42377853, 3.3704975, -0.026908875)
+radius = 3.1289063
+height = 1.1119385
+sides = 16
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=685483775]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.7118568, 3.3704977, -0.026908875)
+radius = 2.0942383
+height = 5.931305
+sides = 16
+
+[node name="CSGCylinder3D12" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=776134269]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.7915688, 3.3704977, -0.026908875)
+radius = 1.168457
+height = 10.260498
+sides = 16
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=1458071939]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 4.3099937, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.63217926
+sides = 16
+
+[node name="CSGCylinder3D10" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=534128602]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 5.2275734, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.8992691
+sides = 16
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=724365779]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.208271, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.68698883
+sides = 16
+
+[node name="CSGCylinder3D11" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D/Generator2" unique_id=1177215159]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 2.2930107, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.6674576
+sides = 16
+
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation" unique_id=942132845]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.464272, 0, 0)
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2" unique_id=1072250524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00020599365, 1.9769478, 5.5048523)
+size = Vector3(12, 2, 42.284)
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2" unique_id=945348112]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00020599365, 4.43227, 5.5048523)
+size = Vector3(2, 6.911, 20)
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2" unique_id=1191077896]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.369728, 1.9769478, 26.619354)
+polygon = PackedVector2Array(-1.3694534, 1.0000513, -1.3734055, -0.975147, 2.4919586, -0.9802332)
+depth = 42.5
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2" unique_id=1518519756]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -7.3656464, 1.9769478, -15.51886)
+polygon = PackedVector2Array(-1.3694534, 1.0000513, -1.3734055, -0.975147, 2.4919586, -0.9802332)
+depth = 42.5
+
+[node name="High Voltage Circuit Breakers3" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2" unique_id=858195486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00020599365, 4.2349463, 13.950111)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers3" unique_id=855993914]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.285, 0.107)
+size = Vector3(10, 5, 6)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers3" unique_id=733363565]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.763, 0.107)
+size = Vector3(9, 1, 5)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers3" unique_id=255252114]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 0, 7.5153875, 2.7362442)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers3" unique_id=2107712858]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, 0, 7.5153875, -2.1979523)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers3" unique_id=198342843]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 3.0999985, 7.5153875, 2.7362442)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers3" unique_id=244048249]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, 3.0999985, 7.5153875, -2.1979523)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers3" unique_id=1313023462]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, -3.0999985, 7.5153875, 2.7362442)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers3" unique_id=614640475]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, -3.0999985, 7.5153875, -2.1979523)
+height = 6.1939697
+sides = 16
+
+[node name="High Voltage Circuit Breakers4" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2" unique_id=139981801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00020599365, 4.2349463, -2.4672852)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers4" unique_id=1940618760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2849998, 0.10700226)
+size = Vector3(10, 5, 6)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers4" unique_id=1385772917]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.763, 0.107)
+size = Vector3(9, 1, 5)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers4" unique_id=1906942251]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 0, 7.5153875, 2.4592667)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers4" unique_id=1480096779]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, 0, 7.5153875, -2.3068695)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers4" unique_id=343830285]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 3.0999985, 7.5153875, 2.4592667)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers4" unique_id=934676247]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, 3.0999985, 7.5153875, -2.3068695)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers4" unique_id=347394050]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, -3.0999985, 7.5153875, 2.4592667)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D2/High Voltage Circuit Breakers4" unique_id=211630461]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, -3.0999985, 7.5153875, -2.3068695)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCombiner3D3" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation" unique_id=690482821]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.386993, 0, 0)
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3" unique_id=1754772388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00020599365, 1.9769478, 5.5048523)
+size = Vector3(12, 2, 42.284)
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3" unique_id=1868759834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.369728, 1.9769478, 26.619354)
+polygon = PackedVector2Array(-1.3694534, 1.0000513, -1.3734055, -0.975147, 2.4919586, -0.9802332)
+depth = 42.5
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3" unique_id=435747698]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -7.365654, 1.9769478, -15.51886)
+polygon = PackedVector2Array(-1.3694534, 1.0000513, -1.3734055, -0.975147, 2.4919586, -0.9802332)
+depth = 42.5
+
+[node name="High Voltage Circuit Breakers3" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3" unique_id=1163428031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00020599365, 4.2349463, 13.950111)
+visible = false
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers3" unique_id=1854124434]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.285, 0.107)
+size = Vector3(10, 5, 8)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers3" unique_id=370265642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.763, 0.107)
+size = Vector3(9, 1, 7)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers3" unique_id=879584532]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 0, 7.5153875, 3.2453842)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers3" unique_id=1594484216]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, 0, 7.5153875, -3.3754578)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers3" unique_id=1670500542]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 3.0999985, 7.5153875, 3.2453842)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers3" unique_id=1178900055]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, 3.0999985, 7.5153875, -3.3754578)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers3" unique_id=2028433763]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, -3.1000023, 7.5153875, 3.2453842)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers3" unique_id=525958534]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, -3.1000023, 7.5153875, -3.3754578)
+height = 6.1939697
+sides = 16
+
+[node name="High Voltage Circuit Breakers4" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3" unique_id=2084143843]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00020599365, 4.2349463, -2.4672852)
+visible = false
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers4" unique_id=2026355858]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.285, 0.107)
+size = Vector3(10, 5, 8)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers4" unique_id=494309561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.763, 0.107)
+size = Vector3(9, 1, 7)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers4" unique_id=483780710]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 0, 7.5153875, 3.2453842)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers4" unique_id=174299280]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, 0, 7.5153875, -3.3754578)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers4" unique_id=593446961]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 3.0999985, 7.5153875, 3.2453842)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers4" unique_id=560863379]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, 3.0999985, 7.5153875, -3.3754578)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers4" unique_id=1296165552]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, -3.1000023, 7.5153875, 3.2453842)
+height = 6.1939697
+sides = 16
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/High Voltage Circuit Breakers4" unique_id=1393927663]
+transform = Transform3D(-1, 2.990035e-08, 8.2150535e-08, 0, 0.93969274, -0.34202015, -8.7422784e-08, -0.34202015, -0.93969274, -3.1000023, 7.5153875, -3.3754578)
+height = 6.1939697
+sides = 16
+
+[node name="Generator3" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3" unique_id=1666868359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2906647, 3.0818563, -1.8629227)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=1211994137]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8788452, -0.13873291, -0.6994858)
+size = Vector3(8.75769, 0.7225342, 7.796997)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=354393713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5932808, 0.63401794, -0.34552765)
+size = Vector3(4.515625, 2.268036, 3.7040443)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=1881054734]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.826229, 0.61340714, -1.186264)
+size = Vector3(5.401367, 0.9278183, 6.4745035)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=1352400871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.826229, 3.136746, -3.0376968)
+size = Vector3(4.7041016, 5.974498, 1.9598124)
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=1857753795]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 7.2200317, 3.3704977, -0.026908875)
+radius = 3.1289063
+height = 1.1119385
+sides = 16
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=1717380771]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.42377853, 3.3704975, -0.026908875)
+radius = 3.1289063
+height = 1.1119385
+sides = 16
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=203824221]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.7118568, 3.3704977, -0.026908875)
+radius = 2.0942383
+height = 5.931305
+sides = 16
+
+[node name="CSGCylinder3D12" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=2072863534]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.7915688, 3.3704977, -0.026908875)
+radius = 1.168457
+height = 10.260498
+sides = 16
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=1001272555]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 4.3099937, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.63217926
+sides = 16
+
+[node name="CSGCylinder3D10" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=1291200960]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 5.2275734, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.8992691
+sides = 16
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=102493767]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.208271, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.68698883
+sides = 16
+
+[node name="CSGCylinder3D11" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator3" unique_id=1760616275]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 2.2930107, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.6674576
+sides = 16
+
+[node name="Generator4" type="CSGCombiner3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3" unique_id=1853554034]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.248565, 3.0818563, 12.982025)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=1790249296]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8788452, -0.13873291, -0.6994858)
+size = Vector3(8.75769, 0.7225342, 7.796997)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=414297241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5932808, 0.63401794, -0.34552765)
+size = Vector3(4.515625, 2.268036, 3.7040443)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=1149259919]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.826229, 0.61340714, -1.186264)
+size = Vector3(5.401367, 0.9278183, 6.4745035)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=128656755]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.826229, 3.136746, -3.0376968)
+size = Vector3(4.7041016, 5.974498, 1.9598124)
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=1301446964]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 7.2200317, 3.3704977, -0.026908875)
+radius = 3.1289063
+height = 1.1119385
+sides = 16
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=329047066]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.42377853, 3.3704975, -0.026908875)
+radius = 3.1289063
+height = 1.1119385
+sides = 16
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=1431853756]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.7118568, 3.3704977, -0.026908875)
+radius = 2.0942383
+height = 5.931305
+sides = 16
+
+[node name="CSGCylinder3D12" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=1639026671]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.7915688, 3.3704977, -0.026908875)
+radius = 1.168457
+height = 10.260498
+sides = 16
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=1702389708]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 4.3099937, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.63217926
+sides = 16
+
+[node name="CSGCylinder3D10" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=1194154837]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 5.2275734, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.8992691
+sides = 16
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=1829792263]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 3.208271, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.68698883
+sides = 16
+
+[node name="CSGCylinder3D11" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/Substation/CSGCombiner3D3/Generator4" unique_id=543360831]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 2.2930107, 3.3704977, -0.026908875)
+radius = 2.3828125
+height = 0.6674576
+sides = 16
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=42706208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110.36713, 9.733072, 21.865288)
+size = Vector3(30, 17.469238, 28.899902)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1870260096]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110.36713, 34.627808, 21.865288)
+size = Vector3(20, 34.52747, 20)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=493294146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110.36713, 54.505264, 21.865288)
+size = Vector3(18.344727, 22.547882, 12.4729)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=2074176620]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110.36713, 55.118504, 21.865288)
+size = Vector3(15.931641, 4.0017242, 29.305664)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1203743083]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110.36713, 60.588394, 21.865288)
+size = Vector3(15.931641, 4.0017242, 29.305664)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1971394635]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 44.10905, 3.7215295, 40.834747)
+radius = 4.2368164
+height = 4.6606445
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/CSGCylinder3D" unique_id=925665272]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3526154, 0)
+operation = 2
+radius = 3.317871
+height = 2.4631348
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1191344905]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 68, 3.722, 40.835)
+radius = 4.2368164
+height = 4.6606445
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/CSGCylinder3D2" unique_id=1405425383]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.8743744, 4.7683716e-07)
+operation = 2
+radius = 3.317871
+height = 12.917114
+sides = 16
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1915094613]
+transform = Transform3D(-1, -8.742278e-08, -3.821371e-15, 0, -4.371139e-08, 1, -8.742278e-08, 1, 4.371139e-08, 68, 3.722, 3.124)
+radius = 4.2368164
+height = 4.6606445
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/CSGCylinder3D3" unique_id=298906941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3526154, 0)
+operation = 2
+radius = 3.317871
+height = 2.4631348
+sides = 16
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=1061226044]
+transform = Transform3D(-1, -8.742278e-08, -3.821371e-15, 0, -4.371139e-08, 1, -8.742278e-08, 1, 4.371139e-08, 44.229, 3.722, 3.124)
+radius = 4.2368164
+height = 4.6606445
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="NavigationRegion3D/CSGCombiner3D/Area4/CSGCylinder3D4" unique_id=1482225151]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3526154, 0)
+operation = 2
+radius = 3.317871
+height = 2.4631348
+sides = 16
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="NavigationRegion3D/CSGCombiner3D/Area4" unique_id=929399421]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 95.206955, 0, 88.0428)
+polygon = PackedVector2Array(-0.22222137, 1.005509, -0.3002472, -0.15908825, 4.3166656, 0.35500085)
+depth = 6.0
+
 [node name="PlaceHolders" type="CSGCombiner3D" parent="NavigationRegion3D" unique_id=1673596739]
 
 [node name="Gates" type="CSGCombiner3D" parent="NavigationRegion3D/PlaceHolders" unique_id=1939267849]
@@ -1245,6 +2101,39 @@ size = Vector3(9.963409, 8.400391, 1)
 material = SubResource("StandardMaterial3D_5ro2l")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/PlaceHolders/Gates/CSGBox3D4" unique_id=1368236229]
+light_color = Color(0, 0.627451, 0.30980393, 1)
+light_energy = 3.0
+shadow_enabled = true
+omni_range = 14.445
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="NavigationRegion3D/PlaceHolders/Gates" unique_id=132168152]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.78289, 5.201291, -57.781525)
+size = Vector3(9.963409, 8.400391, 1)
+material = SubResource("StandardMaterial3D_5ro2l")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/PlaceHolders/Gates/CSGBox3D8" unique_id=380866237]
+light_color = Color(0, 0.627451, 0.30980393, 1)
+light_energy = 3.0
+shadow_enabled = true
+omni_range = 14.445
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="NavigationRegion3D/PlaceHolders/Gates" unique_id=912582992]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.50729, 3.7804866, -97.42115)
+size = Vector3(9.963409, 8.400391, 1)
+material = SubResource("StandardMaterial3D_5ro2l")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/PlaceHolders/Gates/CSGBox3D9" unique_id=261663795]
+light_color = Color(0, 0.627451, 0.30980393, 1)
+light_energy = 3.0
+shadow_enabled = true
+omni_range = 14.445
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="NavigationRegion3D/PlaceHolders/Gates" unique_id=943144286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 118.58252, 3.7804866, -28.618402)
+size = Vector3(9.963409, 8.400391, 1)
+material = SubResource("StandardMaterial3D_5ro2l")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/PlaceHolders/Gates/CSGBox3D10" unique_id=1724373226]
 light_color = Color(0, 0.627451, 0.30980393, 1)
 light_energy = 3.0
 shadow_enabled = true
@@ -1347,7 +2236,7 @@ size = Vector3(11.026239, 7.354504, 0.99438477)
 material = SubResource("StandardMaterial3D_xn734")
 
 [node name="ProtoController" parent="." unique_id=515350423 instance=ExtResource("1_rg8a4")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 53.387096, 3.6468925, -35.186546)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.689114, 1.1253395, -41.258354)
 can_freefly = true
 
 [node name="Streetlight" parent="." unique_id=1272962962 instance=ExtResource("2_6hvvf")]
@@ -1361,6 +2250,12 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 46.02847, 12.376129, -7.21980
 
 [node name="Streetlight12" parent="." unique_id=1427463112 instance=ExtResource("2_6hvvf")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 69.816635, 4.8005486, -69.14332)
+
+[node name="Streetlight15" parent="." unique_id=1177579857 instance=ExtResource("2_6hvvf")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 117.689125, 4.8005486, -47.75009)
+
+[node name="Streetlight14" parent="." unique_id=1157457065 instance=ExtResource("2_6hvvf")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 75.03436, 5.150343, -88.57897)
 
 [node name="Streetlight13" parent="." unique_id=1720015215 instance=ExtResource("2_6hvvf")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 55.294476, 3.620576, -57.176754)
