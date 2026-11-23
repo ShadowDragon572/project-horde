@@ -2210,6 +2210,42 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -49.
 size = Vector3(11.026239, 7.354504, 0.99438477)
 material = SubResource("StandardMaterial3D_xn734")
 
+[node name="Node3D" type="Node3D" parent="NavigationRegion3D" unique_id=1303432371]
+
+[node name="Label3D" type="Label3D" parent="NavigationRegion3D/Node3D" unique_id=94694592]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.706272, 16.777775, -24.80975)
+billboard = 1
+modulate = Color(0, 0.58853126, 0.8488934, 1)
+text = "Water Area"
+font_size = 650
+
+[node name="Label3D2" type="Label3D" parent="NavigationRegion3D/Node3D" unique_id=777820315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.79839, 16.777775, -114.37622)
+billboard = 1
+modulate = Color(1, 0.98333335, 0, 1)
+text = "Electro Area"
+font_size = 650
+
+[node name="Label3D3" type="Label3D" parent="NavigationRegion3D/Node3D" unique_id=1061639544]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.050072, 16.14435, 67.33925)
+billboard = 1
+text = "Spawn Area"
+font_size = 650
+
+[node name="Label3D4" type="Label3D" parent="NavigationRegion3D/Node3D" unique_id=1354122644]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.150726, 16.14435, 37.084625)
+billboard = 1
+modulate = Color(1, 0.13, 0.13, 1)
+text = "Fire Area"
+font_size = 650
+
+[node name="Label3D5" type="Label3D" parent="NavigationRegion3D/Node3D" unique_id=2066698886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.150726, 16.14435, -50.188244)
+billboard = 1
+modulate = Color(0.69327766, 0.8234288, 0.6676479, 1)
+text = "Air  Area"
+font_size = 650
+
 [node name="ProtoController" parent="." unique_id=515350423 instance=ExtResource("1_rg8a4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.689114, 1.1253395, -41.258354)
 can_freefly = true
