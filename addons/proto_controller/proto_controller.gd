@@ -223,9 +223,9 @@ func _physics_process(delta: float) -> void:
 		return
 
 	_update_crouch(delta)
-	_apply_gravity(delta)
 	_apply_jump()
 	_apply_movement(delta)
+	_apply_gravity(delta)
 	move_and_slide()
 
 
@@ -465,8 +465,10 @@ func _play_pickup_sound() -> void:
 func _apply_gravity(delta: float) -> void:
 	if not has_gravity or is_on_floor():
 		fall_time = 0.0
+		var additionalGravity = Vector3(get_gravity().x, 0, get_gravity().z)
+		velocity += additionalGravity * delta
 		return
-
+	
 	var gravity := get_gravity() * gravity_scale
 
 	# Falling: gravity gets stronger the longer we've been falling.
